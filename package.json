@@ -1,0 +1,24 @@
+{
+  "name": "denise-graph-complex-js",
+  "version": "0.0.1",
+  "description": "graph theory utils",
+  "main": "index.js",
+  "scripts": {
+    "test": "mocha test"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Cereceres/denise-is-complex.git"
+  },
+  "keywords": [
+    "graph",
+    "theory",
+    "denise"
+  ],
+  "author": "Jesus Cereceres",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/Cereceres/denise-is-complex/issues"
+  },
+  "homepage": "https://github.com/Cereceres/denise-is-complex#readme"
+}
