@@ -1,6 +1,6 @@
 const assert = require('assert');
 
-const { meanPath, allPath } = require('../index');
+const { meanPath, allPath, getDistance } = require('../index');
 
 describe('index', () => {
   it('should exports the meanPath function', () => {
@@ -9,5 +9,9 @@ describe('index', () => {
 
   it('should exports the allPath function', () => {
     assert(typeof allPath === 'function');
+  });
+
+  it('should exports the allPath function', () => {
+    assert(typeof getDistance === 'function');
   });
 });

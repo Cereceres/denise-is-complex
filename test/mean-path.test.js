@@ -7,22 +7,22 @@ const data = [1, 1, 1, 1,
   1, 0, 0, 0,
   0, 1, 0, 0];
 const dim = 4;
-const result = [2.1818181818181817,
-  2.3333333333333335,
-  2.142857142857143,
-  2.142857142857143,
+const result = [ 3.090909090909091,
+  3.2857142857142856,
+  3,
+  3,
   Infinity,
-  1.75,
-  Infinity,
-  Infinity,
-  2.142857142857143,
   2.5,
-  2.25,
-  2.25,
   Infinity,
-  1.75,
   Infinity,
-  Infinity];
+  3,
+  3.5,
+  3.25,
+  3.25,
+  Infinity,
+  2.5,
+  Infinity,
+  Infinity ]
 describe('mean path ', () => {
   it('should return the matrix of all path possibles', () => {
     const all = meanPath(data, dim);
