@@ -49,6 +49,10 @@ return the mean path matrix for the graph given without passing twice by the sam
 
 return the matrix with all paths possibles without passing twice by the same vertice.
 
+## getDistance(graph = [], vertices = 0) -> Array
+
+
+return the matrix with distances between vertices without passing twice by the same vertice.
 
 
 ### graph = [x_1, x_2, ... , x_vertXvert] where vert = #Vertices
