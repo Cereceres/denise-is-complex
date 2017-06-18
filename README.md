@@ -34,6 +34,23 @@ const result = [2.1818181818181817,2.3333333333333335,2.142857142857143,2.142857
                 Infinity,1.75,Infinity,Infinity];
 const all = meanPath(data, vertices);
 assert.deepEqual(all, result);
+
+const data = [1, 1, 1, 1,
+              0, 1, 0, 0,
+              1, 0, 0, 0,
+              0, 1, 0, 0];
+const dim = 4;
+const result = [
+                1,1,1,1,
+                Infinity,1,Infinity,Infinity,
+                1,2,2,2,
+                Infinity,1,Infinity,Infinity 
+                ];
+result._isDistance = true
+describe('distance ', () => {
+  it('should return the matrix of distanceMin path possibles', () => {
+    const distanceMin = distance(data, dim);
+    assert.deepEqual(distanceMin, result);
 ```
 
 # API
@@ -54,10 +71,13 @@ return the matrix with all paths possibles without passing twice by the same ver
 
 return the matrix with distances between vertices without passing twice by the same vertice.
 
+## [getEfficiency(graphDistance = [], vertices = 0)][1]
+
+return the graph efficiency of graph, the graphDistance must be the array returned by getDistance.
 
 ### graph = [x_1, x_2, ... , x_vertXvert] where vert = #Vertices
 
-
+[1]: https://en.wikipedia.org/wiki/Efficiency_(network_science)
 
 # She is Denise, my love, my wife, my world:
 
