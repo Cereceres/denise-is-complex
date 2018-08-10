@@ -10,7 +10,11 @@ npm install --save denise-graph-complex-js
 # Usage
 
 ```js
-const {allPath, }
+const {
+  meanPath,
+  allPath,
+  getDistance,
+  getEfficiency } = require('denise-is-complex')
 const data = [1, 1, 1, 1,
               0, 1, 0, 0,
               1, 0, 0, 0,
